@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <header>
+    <h1>Bem vindo ao Banco CRIE-TI</h1>
+    <div class="div-header">
+      <button class="button-header"><a href="index.html">Home</a></button>
+      <button class="button-header"><a href="transfer.html">Listagem</a></button>
+    </div>
+  </header>
+
+  <body>
+    <h2>Realizar tranferência</h2>
+    <form id="form" class="transfer">
+      <div id="name">
+        <label for="name">Insira seu nome</label>
+        <select name="name" id="name-select"></select>
+        <span id="name-span"></span>
+      </div>
+
+      <div id="recipient">
+        <label for="recipient">Insira nome do destinatário</label>
+        <select name="recipient" id="recipient-select"></select>
+        <span id="recipient-span"></span>
+      </div>
+
+      <div id="value">
+        <label for="value">Insira o valor</label>
+        <input type="number" id="value-input" placeholder="R$00,00" />
+        <span id="value-span"></span>
+      </div>
+
+      <button class="button-transfer" type="submit">Transferir</button>
+    </form>
+
+    <footer>
+      <h2>Todos os direitos reservados a Artur Albernas©</h2>
+    </footer>
+
+    <script src="transfer.js"></script>
+  </body>
+</html>
